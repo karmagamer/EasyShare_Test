@@ -1,0 +1,15 @@
+<template name='userscore'>
+  	{{#if currentUser}}
+    <ul class="list-group">
+<h2 class='text-center'> Your points.</h2>
+          <li class="list-group-item"><strong>First Name:</strong> {{userfirstName}}</li>
+          <li class="list-group-item"><strong>Last Name:</strong> {{userlastName}}</li>
+          <li class="list-group-item"><strong>Points:</strong> {{userPoints}}</li>
+          <li class="list-group-item"><strong>User Email:</strong> {{userEmail}}</li>
+    </ul>
+  	{{else}}
+  		<h2>Welcome To Easy Share</h2>
+      	<p>Please use the login form on the left to log in and view your points</p>
+        {{/if}}
+
+</template>

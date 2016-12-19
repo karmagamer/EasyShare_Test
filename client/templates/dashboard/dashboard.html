@@ -1,0 +1,18 @@
+<template name="dashboard">
+	{{#if currentUser}}
+<div class='text-center'>
+<h3>Dashboard</h3>
+</div>
+<li class="list-group-item"><strong>Message Priority 1: </strong>#DeMonetisation in India. Share this message about ndtv article on DeMonetisation.</li>
+<p class='text-center'>
+{{>shareit shareData}}
+</p>
+<li class="list-group-item"><strong>Message Priority 2: </strong>#UPElection2017. Share this link for UP election. This shows our perfomance in UP.</li>
+<p class='text-center'>
+{{>shareit shareData2}}
+</p>
+{{else}}
+<h3>Easy Share: Please login or Register to continue</h3>
+	{{/if}}
+
+</template>
